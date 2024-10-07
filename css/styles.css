@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #1f242d;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a{
+    color: #7cf03d;
+}
+
+.navbar ul li a.active{
+    color: #7cf03d;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+
+.home-info h1{
+    font-size: 55px;
+
+}
+
+.hello{
+    color: #7cf03d;
+}
+.home-info h2{
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+}
+
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+
+.home-info .btn-sci .sci a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.home-info .btn-sci .sci a:hover{
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+.home-img .img-box{
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+}
+
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.home-img .img-box .img-item img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40%;
+    margin-top: 50px;
+}
+
+/* about me */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 9%;
+    color: #fff;
+    height: 100vh;
+}
+
+.about-info{
+    flex: 1;
+}
+
+.about-info h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #7cf03d;
+}
+
+.about-info p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img{
+    width: 25vw;
+    border-radius: 40%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* hobbies */
+
+.hobbies {
+    padding: 100px 9%;
+    color: #fff;
+    background-color: #1f242d;
+}
+
+.hobbies h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #7cf03d;
+}
+
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hobby-item {
+    background: #252a34;
+    border-radius: 12px;
+    padding: 30px;
+    width: 48%;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.hobby-item:hover {
+    background: #7cf03d;
+    color: #1f242d;
+}
+
+.hobby-item i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #7cf03d;
+}
+
+.hobby-item h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hobby-item p {
+    font-size: 16px;
+}
+/* Gallery Page Styling */
+.gallery {
+    padding: 100px 9%;
+    color: white;
+}
+
+.gallery h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #7cf03d;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+/* Contact page styles */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9%;
+    color: #fff;
+    text-align: center;
+    background: #1f242d;
+}
+
+.contact-info h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #7cf03d;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.contact-details a {
+    color: #7cf03d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #fff;
+}
+
+.contact-details i {
+    color: #7cf03d;
+    margin-right: 10px;
+}
+
+.navbar ul li.active a {
+    color: #7cf03d;
+}
+
+footer {
+    background-color: #1f242d;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer p a {
+    color: #7cf03d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer p a:hover {
+    color: #fff;
+}
